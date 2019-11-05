@@ -1,6 +1,5 @@
 FROM ubuntu:18.04
 
-#RUN sed -i s://archive.ubuntu.com://jp.archive.ubuntu.com:g /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y net-tools make gcc g++ gcc-multilib g++-multilib cmake googletest
 RUN mkdir -p /googletest/build /googletest/build-i386 && \
