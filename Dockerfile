@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-RUN apt-get install -y net-tools make gcc g++ gcc-multilib g++-multilib cmake googletest
+RUN apt-get install -y make gcc g++ gcc-multilib g++-multilib cmake googletest
 RUN mkdir -p /googletest/build /googletest/build-i386 && \
  cd /googletest/build && cmake /usr/src/googletest && make && make install && \
  cd /googletest/build-i386 && \
