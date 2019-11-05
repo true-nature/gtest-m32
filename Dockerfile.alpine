@@ -1,0 +1,4 @@
+FROM alpine
+
+RUN echo "x86" > /etc/apk/arch
+RUN apk add --update make g++ git gtest-dev
